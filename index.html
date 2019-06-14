@@ -20,12 +20,31 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">  
-  <link rel="stylesheet" href="assets/jRange-master/jquery.range.css" type="text/css">    
+  <link rel="stylesheet" href="assets/jRange-master/jquery.range.css" type="text/css">      
   <style type="text/css">
+    .box-text{
+        background: #ffffff00;
+        border: none;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+    }
+    .box-calculadora {
+        background: #007bff66;
+        border: none;
+        font-weight: 600;
+        width: 130px;
+        text-align: right;
+        border-radius: 10px;
+        padding: 10px;
+    }
 
-    .asd {
-        background:rgba(0,0,0,0);
-        border:none;
+    .box-calculadora-economia {
+        background: #149dcc;
+        border: none;        
+        width: 250px;        
+        border-radius: 25px;
+        padding: 10px;
     }
     
 </style>
@@ -33,9 +52,6 @@
 </head>
 <body>
   <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
-
-    
-
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -56,23 +72,43 @@
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-primary display-4" href="#top">
-                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-                        Home</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#info4-7"><span class="mbri-smile-face mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        Vantagens</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#progress-bars1-9"><span class="mbri-cash mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        Calcular Vantagens</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#contacts3-8"><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        Contato</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="https://mobirise.com">
-                        </a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="https://mobirise.com"><br>
-                        </a></li>
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
-                    <a class="nav-link link text-primary display-4" href="https://mobirise.com">
-                        </a>
-                </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
-                    Faça um Orçamento &nbsp;&nbsp;</a></div>
+                    <a class="nav-link link text-primary display-4" href="#top">
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-primary display-4" href="index.html#info4-7">
+                    <span class="mbri-smile-face mbr-iconfont mbr-iconfont-btn"></span>                        
+                        Vantagens
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-primary display-4" href="index.html#progress-bars1-9">
+                        <span class="mbri-cash mbr-iconfont mbr-iconfont-btn"></span>                        
+                        Calcular Vantagens
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-primary display-4" href="https://landirenzo.com/br/instaladores-de-sistemas-de-glp-e-gas-natural">
+                        <span class="fa fa-wrench mbr-iconfont mbr-iconfont-btn"></span>                        
+                        Oficinas
+                    </a>
+                </li>                     
+                <li class="nav-item">
+                    <a class="nav-link link text-primary display-4" href="index.html#contacts3-8">
+                        <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>                        
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">
+                    <span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Faça um Orçamento &nbsp;&nbsp;
+                </a>
+            </div>
         </div>
     </nav>
 </section>
@@ -133,7 +169,7 @@
                         <input type="hidden" class="sliderKmL" value="10" />                        
                     </div>
                     <div class="progress_value mbr-fonts-style display-7">
-                            KM/L <input type="text" class="asd" id="kmL" value="10" disabled/> 
+                            KM/L: <input type="text" class="box-calculadora" id="kmL" value="10" disabled/> 
                     </div>
                 </div>
             </div>
@@ -145,11 +181,21 @@
                         <input type="hidden" class="sliderKmAno" value="11000" />
                     </div>
                     <div class="progress_value mbr-fonts-style display-7">    
-                            KM/Ano <input type="text" class="asd" id="kmAno" value="11000" disabled/>                                             
+                            KM/Ano: <input type="text" class="box-calculadora" id="kmAno" value="11000" disabled/>                                             
                     </div>
                 </div>
             </div>
-            
+            <div class="progress4 pb-5">
+                <div class="title-wrap">
+                    <div class="progressbar-title mbr-fonts-style display-7">
+                        <p>Preço GNV/m³</p>
+                        <input type="hidden" class="sliderValorGnv" id="sliderValorGnv" value="2.68" />
+                    </div>
+                <div class="progress_value mbr-fonts-style display-7">  
+                    Custo Anual GNV:  <input type="text" class="box-calculadora" id="custo-anual-gnv" value="R$ 2.68" disabled/>             
+                </div>
+                </div>
+            </div>
             <div class="progress3 pb-5">
                 <div class="title-wrap">
                     <div class="progressbar-title mbr-fonts-style display-7">
@@ -157,20 +203,39 @@
                         <input type="hidden" class="sliderValorGasolina" id="sliderValorGasolina" value="4.48" />
                     </div>
                     <div class="progress_value mbr-fonts-style display-7">    
-                        Custo Anual: R$ <input type="text" class="asd" id="custo-anual-gasolina" value="4.68" disabled/>
+                        Custo Anual Gasolina:  <input type="text" class="box-calculadora" id="custo-anual-gasolina" value="R$ 4.68" disabled/>
                     </div>
                 </div>
             </div>
-            
-            <div class="progress4">
+            <div class="progress4 pb-5">             
+                <div class="progress4 pb-5">  
+                    <div class="box-calculadora-economia box-text">
+                        Econômia Anual x Gasolina&nbsp;&nbsp;</br>                          
+                        <input type="text" class="box-text" id="custo-anual-etanol" 
+                            value="R$ 0.00" disabled>                                   
+                        </input>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress4 pb-5">
                 <div class="title-wrap">
                     <div class="progressbar-title mbr-fonts-style display-7">
-                        <p>Preço GNV/m³</p>
-                        <input type="hidden" class="sliderValorGnv" id="sliderValorGnv" value="2.68" />
+                        <p>Preço Etanol/m³</p>
+                        <input type="hidden" class="sliderValorEtanol" id="sliderValorEtanol" value="2.95" />
                     </div>
                 <div class="progress_value mbr-fonts-style display-7">  
-                    Custo Anual: R$ <input type="text" class="asd" id="custo-anual-gnv" value="2.68" disabled/>             
+                    Custo Anual Etanol: <input type="text" class="box-calculadora" id="custo-anual-etanol" value="R$ 2.95" disabled/>             
                 </div>
+                </div>
+            </div>       
+
+            <div class="progress4 pb-5">  
+                <div class="box-calculadora-economia box-text">
+                    Econômia Anual x Etanol&nbsp;&nbsp;</br>                          
+                    <input type="text" class="box-text" id="custo-anual-etanol" 
+                        value="R$ 0.00" disabled>                                   
+                    </input>  
                 </div>
             </div>
         </div>
@@ -340,20 +405,32 @@
         </div>
     </div>
 </section>
-
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
-  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/jRange-master/jquery.range-min.js"></script>
+<script src="https://kit.fontawesome.com/8e9a72c478.js"></script>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+<script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/dropdown/js/script.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="assets/jRange-master/jquery.range-min.js"></script>
  
 <script>
+Number.prototype.formatMoney = function(places, symbol, thousand, decimal) {
+	places = !isNaN(places = Math.abs(places)) ? places : 2;
+	symbol = symbol !== undefined ? symbol : "$";
+	thousand = thousand || ",";
+	decimal = decimal || ".";
+	var number = this, 
+	    negative = number < 0 ? "-" : "",
+	    i = parseInt(number = Math.abs(+number || 0).toFixed(places), 10) + "",
+	    j = (j = i.length) > 3 ? j % 3 : 0;
+	return symbol + negative + (j ? i.substr(0, j) + thousand : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousand) + (places ? decimal + Math.abs(number - i).toFixed(places).slice(2) : "");
+};
+
 $('.sliderKmL').jRange({
     from: 5,
     to: 30,
@@ -368,10 +445,13 @@ $('.sliderKmL').jRange({
 
         let valorLitroAno =  parseInt($('#kmAno').val()) /  parseInt(val);
         //calculo gasolina
-        $('#custo-anual-gasolina').val(($('#sliderValorGasolina').val() * valorLitroAno).toFixed(2));
+        $('#custo-anual-gasolina').val(($('#sliderValorGasolina').val() * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
 
         //calculo gnv
-        $('#custo-anual-gnv').val(( $('#sliderValorGnv').val() * valorLitroAno).toFixed(2));
+        $('#custo-anual-gnv').val(( $('#sliderValorGnv').val() * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
+
+        //calculo etanol
+        $('#custo-anual-etanol').val(( $('#sliderValorEtanol').val() * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
     }
 });
 
@@ -385,15 +465,17 @@ $('.sliderKmAno').jRange({
     showLabels: true,
     snap: true,    
     onstatechange: function(val){
-        $('#kmAno').val(val);  
-            
+        $('#kmAno').val(val);              
         
         let valorLitroAno =  parseInt(val) /  parseInt($('#kmL').val());
         //calculo gasolina
-        $('#custo-anual-gasolina').val(( $('#sliderValorGasolina').val() * valorLitroAno).toFixed(2));
+        $('#custo-anual-gasolina').val(( $('#sliderValorGasolina').val() * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
 
         //calculo gnv
-        $('#custo-anual-gnv').val(( $('#sliderValorGnv').val() * valorLitroAno).toFixed(2));
+        $('#custo-anual-gnv').val(( $('#sliderValorGnv').val() * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
+         
+         //calculo etanol
+         $('#custo-anual-etanol').val(( $('#sliderValorEtanol').val() * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
     }
 });
 
@@ -408,7 +490,7 @@ $('.sliderValorGasolina').jRange({
     snap: true,  
     onstatechange: function(val){
         let valorLitroAno =  parseInt($('#kmAno').val()) /  parseInt($('#kmL').val());
-        $('#custo-anual-gasolina').val((val * valorLitroAno).toFixed(2));
+        $('#custo-anual-gasolina').val((val * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
     }  
 });
 
@@ -423,7 +505,22 @@ $('.sliderValorGnv').jRange({
     snap: true,   
     onstatechange: function(val){
         let valorLitroAno =  parseInt($('#kmAno').val()) /  parseInt($('#kmL').val());
-        $('#custo-anual-gnv').val((val * valorLitroAno).toFixed(2));
+        $('#custo-anual-gnv').val((val * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
+    } 
+});
+
+$('.sliderValorEtanol').jRange({
+    from: 2.00,
+    to: 4.00,
+    step: 0.01,
+    scale: [2.00,3.00,4.00],
+    format: '%s R$/L',
+    width: 600,
+    showLabels: true,
+    snap: true,   
+    onstatechange: function(val){
+        let valorLitroAno =  parseInt($('#kmAno').val()) /  parseInt($('#kmL').val());
+        $('#custo-anual-etanol').val((val * valorLitroAno).formatMoney(2, "R$ ", ".", ","));
     } 
 });
 </script>
